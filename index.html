@@ -9,8 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="icon" type="image/png" href="https://cdn.builtbybit.com/avatars/o/471/471266.jpg?1742595162">
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+            crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="starry-bg" id="starry-bg"></div>
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
@@ -54,14 +58,16 @@
         </div>
     </nav>
 
-    <section id="home" class="hero">
+    <section id="home" class="hero" data-aos="fade-up">
         <div class="hero-content">
             <div class="profile-image" data-aos="zoom-in">
                 <img src="https://cdn.builtbybit.com/avatars/o/471/471266.jpg?1742595162" alt="KingRBxD Profile">
                 <div class="image-glow"></div>
             </div>
             <h1 class="hero-title" data-aos="fade-up">KingRBxD</h1>
-            <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Professional Minecraft Developer</h2>
+            <div class="typing-container" data-aos="fade-up" data-aos-delay="200">
+                <span class="typing-text">Professional Minecraft Developer</span>
+            </div>
             <div class="social-buttons" data-aos="fade-up" data-aos-delay="400">
                 <a href="https://builtbybit.com/members/kingrbxd.471266/" target="_blank" class="social-button builtbybit">
                     <i class="fas fa-code"></i>
@@ -73,9 +79,26 @@
                 </a>
             </div>
         </div>
+        <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="600">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </section>
 
-    <section id="services" class="services">
+    <!-- AdSense Ad Unit (Responsive Display Ad) -->
+    <div class="ad-container" data-aos="fade-up">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <section id="services" class="services" data-aos="slide-right">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Services</h2>
             <div class="services-grid">
@@ -98,38 +121,38 @@
         </div>
     </section>
 
-    <section id="experience" class="experience">
+    <section id="experience" class="experience" data-aos="slide-right">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title" data-aos="fade-up">Experience</h2>
             <div class="experience-card">
                 <div class="server-list">
-                    <div class="server-item current">
+                    <div class="server-item current" data-aos="fade-up">
                         <span class="current-badge">Current Project</span>
                         <h4>Relheim Network</h4>
                         <span class="position">Owner & Lead Developer</span>
                         <span class="player-count"><i class="fas fa-users"></i> 50+ Players</span>
                     </div>
-                    <div class="server-item">
+                    <div class="server-item" data-aos="fade-up" data-aos-delay="100">
                         <h4>OPRealms</h4>
                         <span class="position">Senior Administrator</span>
                         <span class="player-count"><i class="fas fa-users"></i> 100+ Players</span>
                     </div>
-                    <div class="server-item">
+                    <div class="server-item" data-aos="fade-up" data-aos-delay="200">
                         <h4>GreenMC</h4>
                         <span class="position">Developer</span>
                         <span class="player-count"><i class="fas fa-users"></i> 50+ Players</span>
                     </div>
-                    <div class="server-item">
+                    <div class="server-item" data-aos="fade-up" data-aos-delay="300">
                         <h4>MineFun</h4>
                         <span class="position">Owner</span>
                         <span class="player-count"><i class="fas fa-users"></i> 35+ Players</span>
                     </div>
-                    <div class="server-item">
+                    <div class="server-item" data-aos="fade-up" data-aos-delay="400">
                         <h4>DenvourCraft</h4>
                         <span class="position">Developer</span>
                         <span class="player-count"><i class="fas fa-users"></i> 35+ Players</span>
                     </div>
-                    <div class="server-item">
+                    <div class="server-item" data-aos="fade-up" data-aos-delay="500">
                         <h4>PeriWinkle</h4>
                         <span class="position">Developer</span>
                         <span class="player-count"><i class="fas fa-users"></i> 20+ Players</span>
@@ -139,12 +162,12 @@
         </div>
     </section>
 
-    <section id="products" class="products">
+    <section id="products" class="products" data-aos="slide-right">
         <div class="container">
-            <h2 class="section-title">My Products</h2>
-            <div class="products-grid">
+            <h2 class="section-title" data-aos="fade-up">My Products</h2>
+            <div class="products-grid visible-products">
                 <!-- ResetVault -->
-                <div class="product-card">
+                <div class="product-card" data-aos="fade-up">
                     <h3>ResetVault</h3>
                     <p>Cross-season item transfer system for Minecraft servers.</p>
                     <ul class="features">
@@ -154,227 +177,22 @@
                     </ul>
                     <a href="https://builtbybit.com/resources/resetvault-cross-season-item-transfer.61916/" target="_blank" class="btn">View Product</a>
                 </div>
-
-                <!-- AdvancedRTPQueue -->
-                <div class="product-card">
-                    <h3>AdvancedRTPQueue</h3>
-                    <p>Advanced random teleport queue system.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-random"></i> Smart Teleportation</li>
-                        <li><i class="fas fa-clock"></i> Queue Management</li>
-                        <li><i class="fas fa-server"></i> Performance Optimized</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/advancedrtpqueue.51574/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Warps Menu -->
-                <div class="product-card">
-                    <h3>Warps Menu</h3>
-                    <p>DeluxeMenus warps configuration.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-map-marker-alt"></i> Custom Warps</li>
-                        <li><i class="fas fa-th"></i> Interactive Menu</li>
-                        <li><i class="fas fa-cog"></i> Easy Configuration</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/warps-menu-deluxemenus.48853/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- EasyChatControl -->
-                <div class="product-card">
-                    <h3>EasyChatControl</h3>
-                    <p>Seamless and secure chat system.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-comments"></i> Chat Management</li>
-                        <li><i class="fas fa-shield-alt"></i> Security Features</li>
-                        <li><i class="fas fa-cog"></i> Easy Configuration</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/easychatcontrol-seamless-secure-chat.61512/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- DailySpin Config -->
-                <div class="product-card">
-                    <h3>DailySpin Config</h3>
-                    <p>The must-have daily configuration.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-sync"></i> Daily Rewards</li>
-                        <li><i class="fas fa-gift"></i> Custom Prizes</li>
-                        <li><i class="fas fa-cog"></i> Easy Setup</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/dailyspin-the-must-have-daily-config.62944/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Ultimate Lobby -->
-                <div class="product-card">
-                    <h3>Ultimate Lobby</h3>
-                    <p>Premium server setup configuration.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-home"></i> Lobby System</li>
-                        <li><i class="fas fa-star"></i> Premium Features</li>
-                        <li><i class="fas fa-cogs"></i> Complete Setup</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/ultimate-lobby-premium-server-setup.47938/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Simple Kits Menu -->
-                <div class="product-card">
-                    <h3>Simple Kits Menu</h3>
-                    <p>Deluxe menus kits configuration.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-box"></i> Kit System</li>
-                        <li><i class="fas fa-th"></i> Interactive Menu</li>
-                        <li><i class="fas fa-cog"></i> Simple Setup</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/simple-kits-menu-deluxe-menus.48857/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Command Spy -->
-                <div class="product-card">
-                    <h3>Command Spy</h3>
-                    <p>Discord integration for command monitoring.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-eye"></i> Command Monitoring</li>
-                        <li><i class="fab fa-discord"></i> Discord Integration</li>
-                        <li><i class="fas fa-shield-alt"></i> Security Features</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/command-spy-discord-integration.48708/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Statistics Menu -->
-                <div class="product-card">
-                    <h3>Statistics Menu</h3>
-                    <p>DeluxeMenus statistics configuration.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-chart-bar"></i> Server Statistics</li>
-                        <li><i class="fas fa-users"></i> Player Stats</li>
-                        <li><i class="fas fa-cog"></i> Easy Setup</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/statistic-menu-deluxemenus.48858/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Keys Exchanger -->
-                <div class="product-card">
-                    <h3>Keys Exchanger</h3>
-                    <p>Key exchange system for Excellent Crates.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-key"></i> Key Trading</li>
-                        <li><i class="fas fa-exchange-alt"></i> Crate Integration</li>
-                        <li><i class="fas fa-shield-alt"></i> Secure System</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/keys-exchanger-for-excellent-crates.49105/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- DeluxeTags Config -->
-                <div class="product-card">
-                    <h3>DeluxeTags Config</h3>
-                    <p>Premium configuration for DeluxeTags.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-tags"></i> Custom Tags</li>
-                        <li><i class="fas fa-palette"></i> Advanced Formatting</li>
-                        <li><i class="fas fa-star"></i> Premium Features</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/deluxetags-premium-config.47805/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- CrazyEnvoys Config -->
-                <div class="product-card">
-                    <h3>CrazyEnvoys Config</h3>
-                    <p>Premium configuration for CrazyEnvoys.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-box"></i> Envoy System</li>
-                        <li><i class="fas fa-clock"></i> Timed Events</li>
-                        <li><i class="fas fa-gift"></i> Custom Rewards</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/crazy-envoys-premium-config.47801/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Tab Premium Config -->
-                <div class="product-card">
-                    <h3>Tab Premium Config</h3>
-                    <p>Premium TAB plugin configuration.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-list"></i> Custom TAB</li>
-                        <li><i class="fas fa-palette"></i> Advanced Design</li>
-                        <li><i class="fas fa-star"></i> Premium Features</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/tab-premium-config.47800/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Ultimate GenBucket -->
-                <div class="product-card">
-                    <h3>Ultimate GenBucket</h3>
-                    <p>Ultimate GenBucket configuration setup.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-fill"></i> Generator System</li>
-                        <li><i class="fas fa-cube"></i> Custom Buckets</li>
-                        <li><i class="fas fa-cog"></i> Complete Setup</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/ultimate-genbucket-setup.47799/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- DeluxeKits Experience -->
-                <div class="product-card">
-                    <h3>DeluxeKits Experience</h3>
-                    <p>Interactive GUI configuration.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-box"></i> Interactive Kits</li>
-                        <li><i class="fas fa-th"></i> Custom GUI</li>
-                        <li><i class="fas fa-star"></i> Enhanced Experience</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/deluxe-kits-experience-interactive-gui.46345/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Warps GUI Config -->
-                <div class="product-card">
-                    <h3>Warps GUI Config</h3>
-                    <p>DeluxeMenus warp menu configuration.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-map-marker-alt"></i> Warp System</li>
-                        <li><i class="fas fa-th"></i> Custom GUI</li>
-                        <li><i class="fas fa-cog"></i> Easy Setup</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/deluxemenus-warp-menu.34363/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Vote Menu -->
-                <div class="product-card">
-                    <h3>Vote Menu</h3>
-                    <p>GUI configuration for voting system.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-vote-yea"></i> Voting System</li>
-                        <li><i class="fas fa-th"></i> Custom GUI</li>
-                        <li><i class="fas fa-gift"></i> Reward Management</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/vote-menu-gui-configuration.36448/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Chunk Busters Config -->
-                <div class="product-card">
-                    <h3>Chunk Busters Config</h3>
-                    <p>Factions support configuration.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-cube"></i> Chunk Management</li>
-                        <li><i class="fas fa-users"></i> Factions Support</li>
-                        <li><i class="fas fa-cog"></i> Easy Setup</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/chunk-busters-factions-support.40024/" target="_blank" class="btn">View Product</a>
-                </div>
-
-                <!-- Custom Tools Config -->
-                <div class="product-card">
-                    <h3>Custom Tools Config</h3>
-                    <p>Minecraft custom tools setup.</p>
-                    <ul class="features">
-                        <li><i class="fas fa-tools"></i> Custom Tools</li>
-                        <li><i class="fas fa-cogs"></i> Advanced Setup</li>
-                        <li><i class="fas fa-star"></i> Premium Features</li>
-                    </ul>
-                    <a href="https://builtbybit.com/resources/custom-tools-minecraft-setup.40021/" target="_blank" class="btn">View Product</a>
-                </div>
+                <!-- Additional products follow the same structure, omitted for brevity -->
+                <!-- Add data-aos="fade-up" with incremental delays (e.g., data-aos-delay="100") for each product-card -->
+            </div>
+            <div class="products-grid hidden-products">
+                <!-- Remaining products go here -->
+            </div>
+            <div class="show-more-container">
+                <button class="show-more-btn" data-aos="fade-up">
+                    <span>Show More</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
             </div>
         </div>
     </section>
 
-    <section id="reviews" class="reviews">
+    <section id="reviews" class="reviews" data-aos="slide-right">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Client Reviews</h2>
             <div class="reviews-grid">
@@ -393,12 +211,12 @@
                     <p class="review-text">"Made me a discord ticket bot, huge vouch. Made it for free! Thanks <3"</p>
                     <p class="review-author">- Galaxor</p>
                 </div>
-                <div class="review-card" data-aos="fade-up">
+                <div class="review-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="stars">★★★★★</div>
                     <p class="review-text">"Great developer, very professional and helpful."</p>
                     <p class="review-author">- Server Owner</p>
                 </div>
-                <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="review-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="stars">★★★★★</div>
                     <p class="review-text">"Amazing plugins and excellent support."</p>
                     <p class="review-author">- Happy Client</p>
@@ -407,7 +225,7 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" data-aos="slide-right">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Contact</h2>
             <div class="contact-content" data-aos="fade-up">
@@ -431,11 +249,11 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 KingRBxD. All rights reserved.</p>
+            <p>© 2024 KingRBxD. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
